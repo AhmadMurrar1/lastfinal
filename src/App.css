@@ -1,0 +1,144 @@
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .game-card {
+    position: relative;
+    width: calc(33.33% - 20px); 
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; 
+  }
+  
+  
+  .game-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .card-container-left {
+    justify-content: flex-start;
+  }
+  .game-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .game-details-header {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .game-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.3125rem;
+    margin-bottom: 20px;
+  }
+  
+  .game-info {
+    text-align: left;
+  }
+  
+  .game-name {
+    font-size: 2.25rem;
+    color: #333;
+    margin-bottom: 1.25rem;
+  }
+  
+  .game-price {
+    font-size: 1.5rem;
+    color: green;
+    display: flex;
+    align-items: center;
+  }
+  
+  .game-list {
+    font-size: 1.25rem;
+    color: #444;
+    margin-top: 1.25rem;
+  }
+  
+  .add-to-cart-button, .back-button {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0.3125rem;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.25rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .game-details-content {
+      flex-direction: row;
+    }
+  
+    .game-image {
+      min-width: 65rem;
+      max-width: 65rem;
+      min-height: 35.25rem;
+      max-height: 35.25rem;
+    }
+  
+    .game-info {
+      flex: 1;
+      padding: 1.25rem;
+    }
+
+  }
+
+::-webkit-scrollbar {
+  width: 19px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 5px; 
+  border: 2px solid #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

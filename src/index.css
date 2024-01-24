@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Arial, sans-serif';
+  overflow-x: hidden;
+}
+
+main{
+  padding: 10px;
+}
+.Home .HomeNav div a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px; 
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #ddd;
+    color: #555;
+  }
+}
+
+@media (max-width: 768px) {
+  .Searchs{
+    width: 190%;
+    padding:10px;
+    position: relative;
+    left:-27px;
+
+  }
+  .ReFundIcon{
+    display: block;
+    padding: 33px;
+    position: relative;
+    left: -20px;
+  }
+  .RentProHome{
+    position: relative;
+    left: -25px;
+  }
+  .GameRenth1{
+    display: none;
+  }
+  .CartHome{
+    display: none !important;
+    
+  }
+  .HomeNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .gameimgdetails {
+      /* Your CSS rules for the image go here */
+      max-width: 10% !important; /* Make the image responsive by setting its max-width to 100% */
+      height: auto; /* Allow the image to maintain its aspect ratio */
+    }
+    .game-card{
+      width: 20rem;
+      /* left: -75px; */
+    }
+    #fixlibrary{
+      left: -45px;
+    }
+    #footer{
+      display: none;
+    }
+    .cardProfile{
+      margin-left: -3.5rem;
+    }
+}
